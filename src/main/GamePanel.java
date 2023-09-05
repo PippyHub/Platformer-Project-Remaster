@@ -12,6 +12,8 @@ public class GamePanel extends JPanel implements ActionListener {
     public static final int GAME_PANEL_HEIGHT = 768;
     KeyInputs keyInputs;
     MouseInputs mouseInputs;
+    private int frames;
+    private long lastCheck;
     public GamePanel() {
         keyInputs = new KeyInputs(this);
         mouseInputs = new MouseInputs(this);
@@ -21,6 +23,13 @@ public class GamePanel extends JPanel implements ActionListener {
     }
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+        frames++;
+        if(System.currentTimeMillis() - lastCheck >= 1000) {
+            lastCheck = System.currentTimeMillis();
+            System.out.println("FPS" + frames);
+            frames = 0;
+        }
     }
     @Override
     public void actionPerformed(ActionEvent e) {}

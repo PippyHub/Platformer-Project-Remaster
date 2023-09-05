@@ -11,7 +11,6 @@ public class GameFrame extends JFrame {
         this.getContentPane().setPreferredSize(new Dimension(GAME_PANEL_WIDTH, GAME_PANEL_HEIGHT));
 
         this.add(gamePanel);
-        gamePanel.setFocusable(true);
 
         this.pack();
         this.setLocationRelativeTo(null);

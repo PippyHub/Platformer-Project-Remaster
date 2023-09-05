@@ -15,7 +15,7 @@ public class KeyInputs implements java.awt.event.KeyListener {
     }
     @Override
     public void keyPressed(KeyEvent e) {
-
+        System.out.println("true");
     }
     @Override
     public void keyReleased(KeyEvent e) {
