@@ -1,10 +1,10 @@
-package swing;
+package main;
 
 import javax.swing.*;
 import java.awt.*;
 
-import static swing.GamePanel.GAME_PANEL_HEIGHT;
-import static swing.GamePanel.GAME_PANEL_WIDTH;
+import static main.GamePanel.GAME_PANEL_HEIGHT;
+import static main.GamePanel.GAME_PANEL_WIDTH;
 public class GameFrame extends JFrame {
     public static final GamePanel gamePanel = new GamePanel();
     public GameFrame() {

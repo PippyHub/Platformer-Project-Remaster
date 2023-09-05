@@ -1,4 +1,6 @@
-import swing.GameFrame;
+package main;
+
+import main.GameFrame;
 
 public class Main {
     public static void main(String[] args) {

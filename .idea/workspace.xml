@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eb109e1-3bce-4dc2-a706-7cbf2d7147cd" name="Changes" comment="Main class">
-      <change afterPath="$PROJECT_DIR$/src/image/Player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/PlayerImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/TileMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/TileMapImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/PlayerCollision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/PlayerEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/PlayerInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/PlayerRender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/swing/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/swing/GamePanel.java" afterDir="false" />
+    <list default="true" id="0eb109e1-3bce-4dc2-a706-7cbf2d7147cd" name="Changes" comment="Character controller">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/KeyInputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input/MouseInputs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/PlayerImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/PlayerImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/PlayerCollision.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/PlayerEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/PlayerInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/PlayerRender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swing/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/swing/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +52,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/miguel/Computer Science/IntelliJ IDEA/Platformer Project Remaster/src/swing"
   }
 }]]></component>
@@ -48,6 +61,15 @@
       <recent name="$PROJECT_DIR$/src/swing" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Platformer Project Remaster" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,6 +89,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main class" />

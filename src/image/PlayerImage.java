@@ -6,9 +6,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import static player.Player.PLAYER_HEIGHT;
-import static player.Player.PLAYER_WIDTH;
-
 public class PlayerImage {
     final int IMAGE_WIDTH = 100;
     final int IMAGE_HEIGHT = 200;
@@ -24,8 +21,8 @@ public class PlayerImage {
             BufferedImage all = ImageIO.read(new File("src/image/Player.png"));
             int index = 0;
             for (int x = 0; x < IMAGE_WIDTH; x += SUB_IMAGE_WIDTH) {
-                images[index] = all.getSubimage(x, 0, SUB_IMAGE_WIDTH, SUB_IMAGE_HEIGHT)
-                        .getScaledInstance(PLAYER_WIDTH, PLAYER_HEIGHT, BufferedImage.SCALE_SMOOTH);
+                images[index] = all.getSubimage(x, 0, SUB_IMAGE_WIDTH, SUB_IMAGE_HEIGHT);
+                        //.getScaledInstance(PLAYER_WIDTH, PLAYER_HEIGHT, BufferedImage.SCALE_SMOOTH);
                 index++;
             }
 
