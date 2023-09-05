@@ -2,6 +2,7 @@ package main;
 
 public class Game implements Runnable {
     final int FRAMES = 120;
+    final int UPDATES = 200;
     GamePanel gamePanel;
     GameFrame gameFrame;
     Thread gameThread;
@@ -15,16 +16,46 @@ public class Game implements Runnable {
         gameThread = new Thread(this);
         gameThread.start();
     }
+    public void update() {
+        gamePanel.updateGame();
+    }
     @Override
     public void run() {
         double timePerFrame = 1000000000.0 / FRAMES;
-        long lastFrame = System.nanoTime();
-        long now;
+        double timePerUpdate = 1000000000.0 / UPDATES;
+        long lastUpdate = System.nanoTime();
+
+        int frames = 0;
+        int updates = 0;
+        long lastCheck = System.currentTimeMillis();
+
+        double deltaUpdate = 0;
+        double deltaFrame = 0;
+
+
         while(true) {
-            now = System.nanoTime();
-            if (System.nanoTime() - lastFrame >= timePerFrame) {
+            long currentUpdate = System.nanoTime();
+
+            deltaUpdate += (currentUpdate - lastUpdate) / timePerUpdate;
+            deltaFrame += (currentUpdate - lastUpdate) / timePerFrame;
+            lastUpdate = currentUpdate;
+
+            if (deltaUpdate >= 1) {
+                update();
+                updates++;
+                deltaUpdate--;
+            }
+            if (deltaFrame >= 1) {
                 gamePanel.repaint();
-                lastFrame = now;
+                frames++;
+                deltaFrame--;
+            }
+
+            if(System.currentTimeMillis() - lastCheck >= 1000) {
+                lastCheck = System.currentTimeMillis();
+                System.out.println("FPS " + frames + " | UPS " + updates);
+                frames = 0;
+                updates = 0;
             }
         }
     }

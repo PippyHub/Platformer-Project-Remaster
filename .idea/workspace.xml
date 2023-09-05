@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eb109e1-3bce-4dc2-a706-7cbf2d7147cd" name="Changes" comment="Added Game">
+    <list default="true" id="0eb109e1-3bce-4dc2-a706-7cbf2d7147cd" name="Changes" comment="Game loop 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/KeyInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/input/KeyInputs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
@@ -33,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2UvrkCseepUvHso978GtEQrqas6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
     "last_opened_file_path": "/Users/miguel/Computer Science/IntelliJ IDEA/Platformer Project Remaster/src/swing"
   }
 }]]></component>
@@ -92,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693915552258</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Game loop 1.0">
+      <created>1693917634045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693917634045</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +120,7 @@
     <MESSAGE value="Main class" />
     <MESSAGE value="Deleting everything" />
     <MESSAGE value="Added Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Game" />
+    <MESSAGE value="Game loop 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game loop 1.0" />
   </component>
 </project>
