@@ -6,8 +6,7 @@ import java.awt.*;
 import static main.GamePanel.GAME_PANEL_HEIGHT;
 import static main.GamePanel.GAME_PANEL_WIDTH;
 public class GameFrame extends JFrame {
-    public static final GamePanel gamePanel = new GamePanel();
-    public GameFrame() {
+    public GameFrame(GamePanel gamePanel) {
         setTitle("Game");
         this.getContentPane().setPreferredSize(new Dimension(GAME_PANEL_WIDTH, GAME_PANEL_HEIGHT));
 
